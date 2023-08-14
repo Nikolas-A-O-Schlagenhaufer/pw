@@ -2,6 +2,13 @@ body {
 	font-family: Arial;
 }
 
+.content-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .input-container {
   display: flex;
   flex-direction: column;
