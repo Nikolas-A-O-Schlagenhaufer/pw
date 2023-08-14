@@ -1,17 +1,19 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 html {
-	--form-font-size: 1.25rem;
-	--form-input-min-height: 2rem;
+  --form-font-size: 1.25rem;
+  --form-input-min-height: 2rem;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-	background-color: black;
+  background-color: black;
 }
 
 .login-container {
@@ -28,8 +30,8 @@ body {
 .title {
   font-size: 2rem;
   font-weight: bold;
-	color: white;
-	text-shadow: 0 0 0.2rem #fff;
+  color: white;
+  text-shadow: 0 0 0.2rem #fff;
 }
 
 .form-input-container {
@@ -43,31 +45,31 @@ body {
 .form-input {
   font-size: var(--form-font-size);
   width: 300px;
-	min-height: var(--form-input-min-height);
+  min-height: var(--form-input-min-height);
   padding: 10px 20px;
   border: 0.125rem solid #777;
   border-radius: var(--form-input-min-height);
-	background-color: black;
-	color: white;
-	outline: none;
+  background-color: black;
+  color: white;
+  outline: none;
 }
 
 .form-input:focus {
-	border-color: #999;
-	background-color: #333;
+  border-color: #999;
+  background-color: #333;
 }
 
 .login-button {
   font-size: var(--form-font-size);
-	min-height: var(--form-input-min-height);
+  min-height: var(--form-input-min-height);
   font-weight: bold;
   padding: 10px 20px;
   border: 0.125rem solid #777;
   border-radius: var(--form-input-min-height);
   background-color: black;
-	color: white;
-	outline: none;
-	box-shadow: 0 0 0.5rem #fff;
+  color: white;
+  outline: none;
+  box-shadow: 0 0 0.5rem #fff;
 }
 
 .login-button:hover {
@@ -76,5 +78,5 @@ body {
 }
 
 .login-button:focus {
-	border-color: #999;
+  border-color: #999;
 }
