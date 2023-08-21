@@ -1,0 +1,82 @@
+html {
+  --element-height: 37px;
+  --element-padding: 10px;
+}
+
+body {
+	font-size: 10px;
+	font-family: Arial;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	gap: 2px;
+	margin: 2px 0px;
+}
+
+.resultado {
+  height: var(--element-height);
+  padding: 0px var(--element-padding);
+  border: 1px solid #CCC;
+	outline: none;
+}
+
+.limpar {
+  width: 50px;
+  height: var(--element-height);
+  font-size: 10px;
+	padding: var(--element-padding);
+	border: 1px solid #CCC;
+}
+
+.nbr-input {
+	height: var(--element-height);
+  padding: 0px var(--element-padding);
+	border: 1px solid #CCC;
+	outline: none;
+	background-color: #EEE;
+}
+
+.op-button {
+  height: var(--element-height);
+  width: var(--element-height);
+	padding: var(--element-padding);
+	border: none;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	background-color: #FF8000;
+	outline: none;
+}
+
+.op-button:hover {
+	background-color: #EE5000;
+}
+
+.op-button:focus {
+	outline: 1px solid #CCC;
+}
+
+.limpar {
+	height: var(--element-height);
+	padding: 0px var(--element-padding);
+	border: none;
+	background-color: #FF8000;
+	color: white;
+	font-weight: bold;
+	outline: none;
+}
+
+.limpar:hover {
+	background-color: #EE5000;
+}
+
+.limpar:focus {
+	outline: 1px solid #CCC;
+}
+
+.eq-sign {
+	text-align: center;
+}

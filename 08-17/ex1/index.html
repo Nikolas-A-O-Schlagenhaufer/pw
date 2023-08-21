@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Exercício 1</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="row">
+      <input
+        class="nbr-input"
+        type="text"
+        id="nbr-input-1-1"
+        size="3"
+        maxlength="3"
+      />
+      <input
+        class="nbr-input"
+        type="text"
+        id="nbr-input-1-2"
+        size="3"
+        maxlength="3"
+      />
+      <button class="op-button" onclick="calcular('+')">+</button>
+      <span class="eq-sign">=</span>
+      <input type="text" class="resultado" id="1-result" size="10" />
+      <button class="limpar" onclick="limpar('1')">Limpar</button>
+    </div>
+    <div class="row">
+      <input
+        class="nbr-input"
+        type="text"
+        id="nbr-input-2-1"
+        size="3"
+        maxlength="3"
+      />
+      <input
+        class="nbr-input"
+        type="text"
+        id="nbr-input-2-2"
+        size="3"
+        maxlength="3"
+      />
+      <button class="op-button" onclick="calcular('-')">-</button>
+      <span class="eq-sign">=</span>
+      <input type="text" class="resultado" id="2-result" size="10" />
+      <button class="limpar" onclick="limpar('2')">Limpar</button>
+    </div>
+    <div class="row">
+      <input
+        class="nbr-input"
+        type="text"
+        id="nbr-input-3-1"
+        size="3"
+        maxlength="3"
+      />
+      <input
+        class="nbr-input"
+        type="text"
+        id="nbr-input-3-2"
+        size="3"
+        maxlength="3"
+      />
+      <button class="op-button" onclick="calcular('*')">*</button>
+      <span class="eq-sign">=</span>
+      <input type="text" class="resultado" id="3-result" size="10" />
+      <button class="limpar" onclick="limpar('3')">Limpar</button>
+    </div>
+    <div class="row">
+      <input
+        class="nbr-input"
+        type="text"
+        id="nbr-input-4-1"
+        size="3"
+        maxlength="3"
+      />
+      <input
+        class="nbr-input"
+        type="text"
+        id="nbr-input-4-2"
+        size="3"
+        maxlength="3"
+      />
+      <button class="op-button" onclick="calcular('/')">/</button>
+      <span class="eq-sign">=</span>
+      <input type="text" class="resultado" id="4-result" size="10" />
+      <button class="limpar" onclick="limpar('4')">Limpar</button>
+    </div>
+  </body>
+</html>
