@@ -2,14 +2,14 @@ async function obter() {
   var form = document.getElementById("formulario");
   var dados = new FormData(form);
 
-  var promise = await fetch("php/obter.php", {
+  var res = await fetch("php/obter.php", {
     method: "POST",
     body: dados,
   });
 
-  var resposta = await promise.json();
+  var data = await res.json();
 
-  console.log(resposta);
+  console.log(data);
 }
 
 function obter2() {
