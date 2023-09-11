@@ -1,0 +1,26 @@
+
+input{
+    padding: 10px;
+    outline: none;
+    border: solid 1px #bcbcbc;
+    border-radius: 3px;
+    margin-bottom: 3px;
+    width: 250px;
+}
+
+select{
+    padding: 10px;
+    outline: none;
+    border: solid 1px #bcbcbc;
+    border-radius: 3px;
+    margin-bottom: 3px;
+    width: 80px;
+}
+
+input:focus, select:focus{
+    border: solid 1px rgb(181, 14, 14);
+}
+
+label{
+    font-size: 12px;
+}
