@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html {
+  --c-dark: #222222;
+  --c-dark-transparent: rgba(0, 0, 0, 0.116);
+  --c-light-dark: #444444;
+  --c-light: #f2f2f2;
+  --c-white: #ffffff;
+  --c-red: #e2306c;
+  --c-red-transparent: #e2306b77;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  background-color: var(--c-white);
+  border: solid 2px var(--c-dark);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 300px;
+  box-shadow: 0 0 10px var(--c-dark-transparent);
+  transition: 0.15s ease-in-out;
+}
+
+.card:hover {
+  background-color: var(--c-red);
+  border-color: var(--c-red);
+  color: var(--c-white);
+  box-shadow: 0 0 10px var(--c-red-transparent);
+}
+
+.card:hover .btn > button {
+  background-color: var(--c-white);
+  color: var(--c-red);
+}
+
+.card > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 100%;
+  height: 30%;
+}
+
+.title {
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.text {
+  width: 100%;
+  height: 35%;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.btn {
+  width: 100%;
+  height: 20%;
+}
+
+.btn > button {
+  width: 80%;
+  height: 50%;
+  border-radius: 999px;
+  border: none;
+  background-color: var(--c-dark);
+  color: var(--c-light);
+  transition: 0.15s ease-in-out;
+  box-shadow: 0 0 10px var(--c-dark-transparent);
+}
+
+.btn > button:hover {
+  background-color: var(--c-light-dark);
+  cursor: pointer;
+}
